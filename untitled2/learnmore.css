@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
-.banner{
+.container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("images/photo_2023-10-24_15-48-10.jpg");
-    background-size: cover;
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/photo_2023-11-07_22-21-52.jpg");
     background-position: center;
+    background-size: cover;
 }
 .navbar{
     width: 85%;
@@ -47,22 +47,34 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+    margin-left: 70px;
+}
+h1{
+    color: white;
+    font-size: 100px;
+    text-shadow: 0 0 5px forestgreen;
+}
+p{
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+    text-shadow: 0 0 5px forestgreen;
+    margin-left: 7px;
+}
 .content{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 80%;
     transform: translateY(-50%);
-    text-align: center;
     color: white;
-}
-.content h1{
-    font-size: 70px;
-    margin-top: 80px;
-}
-.content p{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 20px;
+    margin-left: -10px;
 }
 button{
     width: 200px;
@@ -94,4 +106,37 @@ button:hover span{
 }
 button:hover{
     border: none;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url("images/photo_2023-11-07_22-21-52.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url("images/photo_2023-11-07_22-04-40.jpg");
+}
+.card2{
+    background-image: url("images/photo_2023-11-07_22-22-00.jpg");
+}
+.card3{
+    background-image: url("images/photo_2023-11-07_22-21-30.jpg");
+}
+.card4{
+    background-image: url("images/photo_2023-11-07_22-21-46.jpg");
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: forestgreen;
+    text-shadow: 0 0 5px white;
 }
