@@ -20,7 +20,7 @@
 body {
     align-items: center;
     background-color: var(--white);
-    background: url("https://a.rgbimg.com/users/k/kr/krappweis/600/nVIqSeM.jpg");
+    background: url("images/photo_2023-10-24_15-48-10.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ body {
 
 .overlay {
     background-color: var(--forestgreen);
-    background: url("https://a.rgbimg.com/users/k/kr/krappweis/600/nVIqSeM.jpg");
+    background: url("images/photo_2023-10-24_15-48-10.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

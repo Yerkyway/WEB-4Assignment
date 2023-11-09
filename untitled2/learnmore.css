@@ -146,9 +146,8 @@ h5{
     margin-top: 10px;
     border-radius: 50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    font-style: 'Roboto', sans-serif;
     font-size: medium;
-    width:60%;
+    width:99%;
 }
 *{
     box-sizing:border-box;
