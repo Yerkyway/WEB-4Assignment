@@ -89,15 +89,15 @@ html {
     position: relative;
     width: 100%;
     z-index: 10;
-
-}
-
-.panel-pricing-table {
     box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
+    text-transform: uppercase;
 }
+
+
 
 @media (min-width: 900px) {
     .panel-pricing-table {
@@ -105,25 +105,6 @@ html {
     }
 }
 
-.panel-pricing-table * {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-
-/*@media (min-width: 900px) {*/
-/*    .pricing-plan {*/
-/*        border-bottom: none;*/
-/*        border-right: 1px solid white;*/
-/*        flex-basis: 100%;*/
-/*        padding: 25px 50px;*/
-/*    }*/
-
-/*    .pricing-plan:last-child {*/
-/*        border-right: none;*/
-/*    }*/
-/*}*/
 
 .pricing-img {
     width: 80%;
