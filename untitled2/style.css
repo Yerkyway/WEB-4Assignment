@@ -95,3 +95,40 @@ button:hover span{
 button:hover{
     border: none;
 }
+
+/* Media query for screens smaller than 768px (typical tablet size) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+}
+
+/* Media query for screens smaller than 480px (typical mobile size) */
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 150px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 150px;
+        font-size: 14px;
+        margin: 15px 5px;
+    }
+}

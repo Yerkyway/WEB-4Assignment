@@ -159,3 +159,65 @@ h5{
 .about-us p strong {
     font-weight: bold;
 }
+
+
+/* Add media query for screens smaller than 768px (typical tablet size) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .col {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .col p {
+        font-size: 10px;
+        line-height: 14px;
+        margin-left: 0;
+    }
+
+    .content {
+        top: 70%;
+    }
+}
+
+/* Add media query for screens smaller than 480px (typical mobile size) */
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .col p {
+        font-size: 9px;
+        line-height: 12px;
+        margin-left: 0;
+    }
+
+    button {
+        width: 150px;
+        font-size: 14px;
+        margin: 15px 5px;
+    }
+
+    .card {
+        width: 150px;
+        height: 180px;
+    }
+}

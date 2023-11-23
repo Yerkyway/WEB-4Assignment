@@ -247,3 +247,57 @@ ul {
 .team-area .social li.instagram a {
     background-color: #cd486b;
 }
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .site-heading h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .site-heading h4 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .site-heading h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .site-heading h4 {
+        margin-left: 0;
+        text-align: center;
+    }
+}

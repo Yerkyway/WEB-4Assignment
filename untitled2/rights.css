@@ -1,10 +1,13 @@
-*{
+/* Reset styles */
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   color: white;
 }
-.navbar{
+
+/* Navbar styles */
+.navbar {
   width: 85%;
   margin: auto;
   padding: 35px 0;
@@ -12,22 +15,26 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo{
+
+.logo {
   width: 200px;
   cursor: pointer;
 }
-.navbar ul li{
+
+.navbar ul li {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
   position: relative;
 }
-.navbar ul li a{
+
+.navbar ul li a {
   text-decoration: none;
   color: forestgreen;
   text-transform: uppercase;
 }
-.navbar ul li::after{
+
+.navbar ul li::after {
   content: '';
   height: 3px;
   width: 0;
@@ -37,49 +44,90 @@
   bottom: -3px;
   transition: 0.5s;
 }
-.navbar ul li:hover::after{
+
+.navbar ul li:hover::after {
   width: 100%;
 }
-.container{
+
+/* Container styles */
+.container {
   width: 100%;
   height: 100vh;
-  background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/photo_2023-11-07_22-21-52.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/photo_2023-11-07_22-21-52.jpg");
   background-position: center;
   background-size: cover;
 }
+
+/* Left box styles */
 .left {
-  width:200px;
-  display:flex;
-  flex-wrap:wrap;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .box {
-  width:200px;
-  border:var(20);
-  margin-bottom:15px;
-  padding-bottom:10px;
+  width: 200px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
   background-color: rgb(117, 164, 117);
 }
+
+/* Right box styles */
 .flex {
-  display:flex;
+  display: flex;
 }
+
 .container {
-  max-width:700px;
-  margin:0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
+
 .right {
-  margin-left:10px;
-  background-color:rgb(117, 164, 117);
+  margin-left: 10px;
+  background-color: rgb(117, 164, 117);
 }
+
 .subtitle {
-  font-weight:bold;
-  padding: top 3px;
-  margin-bottom:5px;
+  font-weight: bold;
+  padding-top: 3px;
+  margin-bottom: 5px;
 }
+
 .box-wrap {
-  padding-left:10px;
-  padding-bottom:5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
+
 .title {
-  font-size:xx-large;
+  font-size: xx-large;
+}
+
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .left,
+  .box {
+    width: 100%;
+  }
+
+  .right {
+    margin-left: 0;
+  }
 }
 

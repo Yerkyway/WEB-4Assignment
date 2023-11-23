@@ -165,6 +165,9 @@ body {
     text-transform: uppercase;
     transition: transform 80ms ease-in;
 }
+.btn a{
+    text-decoration: none;
+}
 
 .form > .btn {
     margin-top: 1.5rem;
@@ -208,5 +211,59 @@ body {
     100% {
         opacity: 1;
         z-index: 5;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .container__form {
+        width: 100%;
+    }
+
+    .container--signin,
+    .container--signup {
+        width: 100%;
+    }
+
+    .container.right-panel-active .container__overlay {
+        transform: translateX(0);
+    }
+
+    .overlay {
+        transform: translateX(0);
+    }
+
+    .overlay--left,
+    .overlay--right {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
+        /* Adjust any root variables for smaller screens if needed */
+    }
+
+    .container,
+    .container__overlay,
+    .overlay__panel {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .container.right-panel-active .container--signup {
+        transform: translateX(0);
+    }
+
+    .overlay {
+        transform: translateX(0);
+    }
+
+    .overlay__panel {
+        transform: translateX(0);
     }
 }
